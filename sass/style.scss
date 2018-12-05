@@ -1,0 +1,101 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #335fcd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+h2, p {
+    margin: 0px 0px 5px 0px;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+span.more {
+    color: #fff;
+    margin-top: 20px;
+    display: block;
+    align-self: flex-end;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 20px 20px;
+    min-height: calc(100vh - 70px);
+    justify-content: space-between;
+    div.blocs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+        }
+        div.grey {
+            background-color: #bcbcbd;
+            p, h2 {
+            color: #403d3d; 
+            }
+        }
+        div.white {
+            background-color: #fff;
+        }
+        div.blue {
+            background-color: #1f3f70;
+        }
+        div.orange {
+            background-color: #e9a616;
+        }
+        div.purple {
+            background-color: #33072e;
+        }
+    }
+    section.footer {
+        padding: 15px;
+        background-color: #e9e1eb;
+        margin-top: 20px;
+        p {
+            color: #403d3d;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.wrapper {
+        div.blocs {
+            div {
+                width: 25%;
+                margin: 0px 10px 0px 10px;
+                height: 400px;
+            }
+            flex-direction: row;
+            div.white {
+                display: none;
+            }
+            div.grey {
+                height: 106px;
+            }
+        }
+        section.footer {
+            background-color: #7c93d9;
+            padding: 25px;
+            margin: 10px;
+        }
+    }
+    span.more {
+        align-self: center;
+    }
+}
+
